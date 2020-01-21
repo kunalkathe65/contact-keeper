@@ -3,10 +3,11 @@ const connectDB = require('./config/db');
 
 const app = express();
 
-// Connect Database
+//Connect Database
 connectDB();
 
-const PORT= process.env.PORT | 5000;
+//first it will look for a environment variable "PORT" (in production env) or else will start a server on 5000
+const PORT= process.env.PORT | 5000;   
 
 //Init Middleware
 app.use(express.json({ extended:false})); 

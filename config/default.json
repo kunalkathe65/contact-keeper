@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://kunalkathe65:123Bharatmahan@@contact-keeper-oqbkx.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://kunalkathe65:123Bharatmahan@@contact-keeper-oqbkx.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
 }
