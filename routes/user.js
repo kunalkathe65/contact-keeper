@@ -58,9 +58,9 @@ async (req,res) => {
 
         const secret = config.get('jwtSecret');
 
-        //signing JWT with payload, secret(anything in String), options(like token expire time in ms etc...) and callback
+        //signing JWT with payload, secret(anything in String), options(like token expire time in seconds etc...) and callback
         jwt.sign(payload,secret,{
-            expiresIn:3600000
+            expiresIn:36000000000000
         },(err,token) => {
             if(err) throw err;
             else{
