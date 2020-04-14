@@ -9,6 +9,7 @@ const ContactItem = ({ contact }) => {
   //Deleting  Contact
   const onDelete = () => {
     contactContext.deleteContact(id);
+    contactContext.clearCurrent();
   };
 
   return (
@@ -40,7 +41,12 @@ const ContactItem = ({ contact }) => {
         )}
       </ul>
       <p>
-        <button className="btn btn-dark btn-sm ">Edit</button>
+        <button
+          className="btn btn-dark btn-sm "
+          onClick={() => contactContext.setCurrent(contact)}
+        >
+          Edit
+        </button>
         <button className="btn btn-danger btn-sm " onClick={onDelete}>
           Delete
         </button>
