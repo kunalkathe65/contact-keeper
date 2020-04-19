@@ -10,7 +10,7 @@ const Alert = () => {
     //checking if alerts array has any alerts
     alerts.length > 0 &&
     alerts.map((alert) => (
-      <div key={alert.key} className={`alert alert-${alert.type}`}>
+      <div key={alert.id} className={`alert alert-${alert.type}`}>
         <i className="fa fa-info-circle" /> {alert.msg}
       </div>
     ))
