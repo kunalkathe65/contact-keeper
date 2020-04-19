@@ -83,6 +83,7 @@ const ContactForm = () => {
         name="phone"
         value={phone}
         onChange={onChange}
+        minLength="10"
       />
       <h5>Contact Type</h5>
       <input
