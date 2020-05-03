@@ -98,6 +98,7 @@ const ContactForm = () => {
         type="radio"
         name="type"
         value="professional"
+        checked={type === "personal"}
         onChange={onChange}
       />
       Professional
